@@ -9,4 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class Sport extends Model
 {
     protected $guarded = [];
+
+    public function votes()
+    {
+        return $this->hasMany(Vote::class, 'sport_id');
+    }
 }
