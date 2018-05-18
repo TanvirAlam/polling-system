@@ -15,15 +15,15 @@ class CreateTableSports extends Migration
     {
         Schema::create('sports', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('object_id', 60);
-            $table->string('group_name', 60);
-            $table->string('group_id', 60);
-            $table->string('away_name', 60);
-            $table->string('home_name', 60);
-            $table->string('players_name', 150);
-            $table->string('sports', 60);
-            $table->string('country', 60);
-            $table->string('state', 60);
+            $table->string('object_id');
+            $table->string('group_name');
+            $table->unsignedInteger('group_id');
+            $table->string('away_name');
+            $table->string('home_name');
+            $table->string('players_name');
+            $table->string('sports');
+            $table->string('country');
+            $table->string('state');
             $table->timestamp('event_date');
             $table->timestamps();
         });
