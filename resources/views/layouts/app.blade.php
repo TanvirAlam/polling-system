@@ -16,9 +16,22 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <style>
+        body { padding-bottom: 100px }
+        .level { display: flex; align-items: center; }
+        .textAlign { align-items: center; }
+        .flex { flex: 1; }
+        .ml-a { margin-left: auto; }
+        .font-color1 { color: blue; }
+        .font-color2 { color: red; }
+        [v-cloak] { display: none; }
+        .ais-highlight > em { background: black; font-style: normal; color: white;}
+    </style>
 </head>
 <body>
     <div id="app">
