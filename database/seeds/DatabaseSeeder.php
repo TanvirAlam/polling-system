@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('users')->delete();
+        \DB::table('sports')->delete();
         $json = File::get("database/seeds/data/test-assignment.json");
         $data = json_decode($json);
         foreach ($data as $obj) {
