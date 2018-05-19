@@ -25,17 +25,16 @@
         body { padding-bottom: 100px }
         .level { display: flex; align-items: center; }
         .textAlign { align-items: center; }
-        .flex { flex: 1; }
         .ml-a { margin-left: auto; }
         .font-color1 { color: blue; }
         .font-color2 { color: red; }
         [v-cloak] { display: none; }
-        .ais-highlight > em { background: black; font-style: normal; color: white;}
+        
     </style>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-light navbar-pollsystem">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -45,11 +44,6 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
